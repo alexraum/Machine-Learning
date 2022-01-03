@@ -1,4 +1,4 @@
-### Homework 3: Machine Learning (Alex Raum)
+### Homework 3: Naive Bayes and Neural Network Models
 
 # import libraries
 library(tidyverse)

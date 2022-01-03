@@ -1,4 +1,4 @@
-### Homework 2: Machine Learning (Alex Raum)
+### Tree-Based Models
 
 # import libraries
 library(tidyverse)
@@ -18,6 +18,8 @@ setwd("C:/Users/alexr/OneDrive/Documents/NCSU/MSA Program/Fall 2021/AA502/Machin
 ins_t = read.csv("insurance_t.csv")
 
 ##################################################################################################################
+
+## Part 0: Data Cleaning
 
 # Check for NAs
 ins_nas = ins_t[colSums(is.na(ins_t)) > 0]
@@ -48,7 +50,7 @@ for(i in 1:ncol(ins_t)) {
 
 ##################################################################################################################
 
-# Part 1: Build a Random Forest model and report details
+## Part 1: Build a Random Forest model and report details
 
 # examine relative counts
 table(ins_t$INS)
@@ -125,7 +127,7 @@ abline(a = 0, b = 1, lty = 3)
 
 ##################################################################################################################
 
-# Part 1: Build an XGBoost model and report details
+## Part 2: Build an XGBoost model and report details
 
 # separate training and test data
 train_x <- model.matrix(INS ~ ., data = ins_t)[,-1]

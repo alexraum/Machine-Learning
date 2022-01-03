@@ -1,4 +1,4 @@
-### Homework 1: Machine Learning (Alex Raum)
+### General Additive Models
 
 # import libraries
 library(tidyverse)
